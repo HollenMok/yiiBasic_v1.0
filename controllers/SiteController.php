@@ -1,7 +1,6 @@
 <?php
 
 namespace app\controllers;
-
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -94,7 +93,9 @@ class SiteController extends Controller
     }
     
     public function actionSay($message = "hello"){
-    	return $this->render('say',['message'=>$message]);
+    	
+    	 return  $this->renderPartial('sm.tpl',['message'=>$message]);
+    	//return $this->render('say',['message'=>$message]);
     }
     public function actionEntry(){
     	$model = new EntryForm();

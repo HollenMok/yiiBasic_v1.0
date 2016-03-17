@@ -7,6 +7,13 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+        'view' => [
+             'renderers' =>[
+                'tpl' =>[
+                    'class' => 'yii\smarty\ViewRenderer',
+                ]
+             ],
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'jBNYiwUPpA1F9McSNZNL7pX7-JoaG0_Y',
