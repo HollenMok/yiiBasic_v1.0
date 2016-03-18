@@ -9,7 +9,7 @@ $config = [
     'components' => [
         'view' => [
              'renderers' =>[
-                'tpl' =>[
+                'html' =>[
                     'class' => 'yii\smarty\ViewRenderer',
                 ]
              ],

@@ -93,8 +93,8 @@ class SiteController extends Controller
     }
     
     public function actionSay($message = "hello"){
-    	
-    	 return  $this->renderPartial('sm.tpl',['message'=>$message]);
+    	//use smarty or default render 
+          return  $this->renderPartial('head\head.html',['message'=>$message]);
     	//return $this->render('say',['message'=>$message]);
     }
     public function actionEntry(){
